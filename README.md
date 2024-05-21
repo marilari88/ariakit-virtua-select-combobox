@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# Ariakit + SelectComb Virtualized Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a demo project showcasing the implementation of a select combobox with a virtualized list using the Virtua library.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project aims to demonstrate the efficient rendering of large lists in a select combobox using virtualization. Virtualization is a technique where only the visible portion of a list is rendered at any given time, improving performance for large lists.
 
-## Expanding the ESLint configuration
+The project uses the Ariakit library for the select combobox and the Virtua library for list virtualization.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+To get started with this project, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the required dependencies using `yarn`.
+4. Start the project using `yarn dev`.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+
+Once the project is running, you can interact with the select combobox. As you scroll through the list, you'll notice that even with a large number of items, the performance remains smooth. This is due to the virtualization provided by the Virtua library.
+
+## Contributing
+
+Contributions are welcome. Please open an issue or submit a pull request if you have something to contribute.
